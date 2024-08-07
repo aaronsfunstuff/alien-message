@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien Message Decoder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#decoder">Decoder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>👽 Greetings, Earthling!</h1>
+            <p>You’ve Received an Alien Message!</p>
+            <a href="#decoder" class="cta-button">Decode the Message</a>
+        </div>
+    </section>
+
+    <section id="decoder">
+        <h2>Alien Message Decoder</h2>
+        <div class="decoder-container">
+            <input type="text" id="input-text" placeholder="Enter your message" autocomplete="off">
+            <select id="cipher-type">
+                <option value="reverse">Reverse Cipher</option>
+                <option value="caesar">Caesar Cipher</option>
+                <option value="vigenere">Vigenère Cipher</option>
+            </select>
+            <input type="text" id="key" placeholder="Enter key (if needed)" autocomplete="off">
+            <button onclick="decodeMessage()">Decode</button>
+        </div>
+        <div id="decoded-message" class="decoded-output"></div>
+    </section>
+
+    <footer>
+        <p>Intergalactic Design Team | Extraterrestrial Development Crew</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
