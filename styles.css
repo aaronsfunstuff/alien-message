@@ -96,3 +96,109 @@ nav ul li a:hover {
     text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
     animation: pulse 2s infinite alternate;
 }
+
+#hero p {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff00ff, #8a2be2);
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 0, 255, 0.5);
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255, 0, 255, 0.7);
+}
+
+#decoder {
+    background: rgba(20, 20, 30, 0.95);
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    margin: 40px auto;
+    max-width: 800px;
+    width: calc(100% - 40px);
+    animation: fadeIn 1s ease-in;
+}
+
+#decoder h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    color: #00ff00;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+}
+
+.decoder-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#decoder input,
+#decoder select,
+#decoder button {
+    margin: 10px;
+    padding: 12px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#decoder input {
+    width: 70%;
+    background: #333;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#decoder input:focus {
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+#decoder select {
+    width: 50%;
+    background: #444;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    appearance: none;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    position: relative;
+    padding-right: 30px;
+}
+
+#decoder select:hover {
+    background: #555;
+    color: #00ff00;
+}
+
+#decoder button {
+    background: #00ffff;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px
